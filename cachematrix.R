@@ -7,7 +7,6 @@
 #' x = makeCacheMatrix(matrix(rnorm(9), 3, 3))
 #' x$set(matrix(rnorm(16), 4, 4))
 makeCacheMatrix <- function(x = matrix()) {
-  # todo error if x is not a matrix
   inv <- NULL
   set <- function(y) {
     x <<- y
